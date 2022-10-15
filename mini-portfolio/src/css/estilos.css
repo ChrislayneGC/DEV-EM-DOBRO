@@ -1,6 +1,6 @@
 body {
     background-image: url(../imagens/fundo.gif);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -44,7 +44,10 @@ body {
     font-size: 20px;
     color: #b8bbc5;
 }
+.cartao .conteudo{
+    margin-top: 15px;
 
+}
 .cartao .abas {
     display: flex;
 }
@@ -62,7 +65,7 @@ body {
     width: 30px;
 }
 
-.cartao .abas .aba.selecionada {
+.cartao .abas .aba.selecionado {
     background-color: #262626;
 }
 
@@ -80,10 +83,10 @@ body {
     display: none;
 }
 
-.informacoes-abas .informacao.selecionada{
+.informacoes-abas .informacao.selecionado{
     display: block;
-    margin: 0px
 }
+
 .informacoes-abas .sub-titulo {
     font-size: 22px;
     margin-bottom: 25px;
@@ -93,15 +96,15 @@ body {
 .informacoes-abas .descricao {
     font-size: 20px;
     max-height: 180px;
-    overflow: auto;
+    overflow-y: auto;
     padding-right: 15px;
 }
 
-.informacoes-abas .descricao span{
+.informacoes-abas .descricao span {
     color: #02d08f;
 }
 
-.redes-sociais{
+.redes-sociais {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -117,7 +120,7 @@ body {
     text-align: center;
     padding: 10px;
     font-size: 20px;
-    transition: background-color 0.2s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 
 }
 .redes-sociais li a:hover{
@@ -131,5 +134,3 @@ body {
 .redes-sociais .github{
     background-color: #545454;
 }
-
-
